@@ -3,8 +3,16 @@
 This repository is a collection of assignment from the Object-Oriented Java Lab [JNTUA](https://www.jntua.ac.in/) CSE curricula. It aspires to support and guide professors who are teaching the subject.
 
 ## References and Links to Weeks
-1. [Week 1 A - Installation, Code Formatting and Debugging](Week-01/src/a/installation/README.md)
-2. [Week 1 B - Quadratic Equation](Week-01/src/b/equation/README.md)
+### Week 1
+- [Week 1 A - Installation, Code Formatting and Debugging](Week-01/src/a/installation/README_Week01_A.md)
+- [Week 1 B - Quadratic Equation](Week-01/src/b/equation/README_Week01_B.md)
+- [Week 1 C - Electricity Bill](Week-01/src/c/electricity/README_Week01_C.md)
+- [Week 1 D - Matrix Multiplication](Week-01/src/d/matrix/README_Week01_D.md)
+
+### Week 2
+- [Week 2 A - Inheritance](Week-02/src/a/inheritance/README_Week02_A.md)
+- [Week 2 B - Method Overloading and Overriding](Week-02/src/b/methods/README_Week02_B.md)
+- [Week 2 C - Currency Converter](Week-02/src/c/currency/README_Week02_C.md)
 
 ## Printing the resources
 
