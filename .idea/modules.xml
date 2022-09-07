@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/OOP-Java-Lab.iml" filepath="$PROJECT_DIR$/OOP-Java-Lab.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SolutionsSSE/SolutionsSSE.iml" filepath="$PROJECT_DIR$/SolutionsSSE/SolutionsSSE.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week-01/Week-01.iml" filepath="$PROJECT_DIR$/Week-01/Week-01.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week-02/Week-02.iml" filepath="$PROJECT_DIR$/Week-02/Week-02.iml" />
     </modules>
