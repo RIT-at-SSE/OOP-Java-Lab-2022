@@ -1,0 +1,63 @@
+package c.currency.template;
+
+import java.util.Scanner;
+
+/**
+ * A solution for a currency converter program.
+ * <p>
+ * This class includes the methods for currency conversion.
+ * First the user is asked to put in the amount which should get converted, then a calculation is made and last the
+ * values are printed to the console.
+ *
+ * @author CSE - Noor Mohammed & INSO - Johannes Hufnagl
+ */
+
+public class Currency {
+    double inr, usd;
+    double euro, yen;
+    Scanner in = new Scanner(System.in);
+
+    public void dollarToRupee() {
+        System.out.println("Enter dollars to convert into Rupees:");
+        usd = in.nextInt();
+        inr = usd * 67;
+        System.out.println("Dollar =" + usd + "equal to INR=" + inr);
+    }
+
+    public void rupeeToDollar() {
+        System.out.println("Enter Rupee to convert into Dollars:");
+        inr = in.nextInt();
+        // TODO: Figure out the calculation to convert rupee to dollar
+        //  (Hint: look at how it is done in the opposite direction in the method dollartorupee)
+        usd = 0; // Change this line here
+        System.out.println("Rupee =" + inr + "equal to Dollars=" + usd);
+    }
+
+    public void euroToRupee() {
+        System.out.println("Enter euro to convert into Rupees:");
+        euro = in.nextInt();
+        inr = euro * 79.50;
+        System.out.println("Euro =" + euro + "equal to INR=" + inr);
+    }
+
+    public void rupeeToEuro() {
+        System.out.println("Enter Rupees to convert into Euro:");
+        inr = in.nextInt();
+        euro = (inr / 79.50);
+        System.out.println("Rupee =" + inr + "equal to Euro=" + euro);
+    }
+
+    public void yenToRupee() {
+        System.out.println("Enter yen to convert into Rupees:");
+        yen = in.nextInt();
+        inr = yen * 0.61;
+        System.out.println("YEN=" + yen + "equal to INR=" + inr);
+    }
+
+    public void rupeeToYen() {
+        System.out.println("Enter Rupees to convert into Yen:");
+        inr = in.nextInt();
+        yen = (inr / 0.61);
+        System.out.println("INR=" + inr + "equal to YEN" + yen);
+    }
+}
