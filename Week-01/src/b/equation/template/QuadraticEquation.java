@@ -19,7 +19,7 @@ public class QuadraticEquation {
         // TODO: read in the values for a, b, and c via the Scanner class
         Scanner scanner = new Scanner(System.in);
         System.out.println("Value of a?");
-        double a = scanner.nextInt();
+        double a = scanner.nextDouble();
         // TODO: read in b the same way as a
 
         double b = 0; // change this line here
