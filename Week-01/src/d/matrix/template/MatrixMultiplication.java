@@ -13,10 +13,10 @@ public class MatrixMultiplication {
         // TODO create another matrix, in the same format as a
         int b[][] = {};
 
-        //creating another matrix to store the multiplication of two matrices
+        // creating another matrix to store the multiplication of two matrices
         int c[][] = new int[3][3];  //3 rows and 3 columns
 
-        //multiplying and printing multiplication of 2 matrices
+        // multiplying and printing multiplication of 2 matrices
         // TODO: Figure out x
         //       how far does the loop have to go? (Hint: 0 is wrong, look at the size of the matrices)
         int x = 0;
@@ -26,9 +26,9 @@ public class MatrixMultiplication {
                 for (int k = 0; k < x; k++) {
                     c[i][j] += a[i][k] * b[k][j];
                 }//end of k loop
-                System.out.print(c[i][j] + " ");  //printing matrix element
-            }//end of j loop
+                System.out.print(c[i][j] + " "); // printing matrix element
+            } // end of j loop
             System.out.println();//new line
-        }// end of i loop
+        } // end of i loop
     }
 }

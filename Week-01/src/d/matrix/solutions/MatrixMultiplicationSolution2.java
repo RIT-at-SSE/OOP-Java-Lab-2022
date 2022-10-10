@@ -1,11 +1,9 @@
 package d.matrix.solutions;
 
 /**
- * A possible solution for the quadratic equation program.
- *
  * In this code there is a quick introduction on how to multiply matrices.
  *
- * Also, Lukas provides different solution to multiply matrices, by using different methods.
+ * This class provides different solution to multiply matrices, by using different methods.
  *
  * In the method simpleMultiplication(), the calculation is done manually for each index.
  *
@@ -20,6 +18,7 @@ package d.matrix.solutions;
  * @author CSE, INSO & SSE - Lukas Buerstmayr
  */
 public class MatrixMultiplicationSolution2 {
+
     /*
     Brief introduction to matrix multiplication:
     In order to be able to multiply two matrices A and B,
@@ -42,6 +41,7 @@ public class MatrixMultiplicationSolution2 {
     c1,2 = a1,1 * b1,2 + a1,2 * b2,2 + a1,3 * b3,2
     c2,1 = a2,1 * b1,1 + a2,2 * b2,1 + a2,3 * b3,1
     c2,2 = a2,1 * b1,2 + a2,2 * b2,2 + a2,3 * b3,2
+
     In this example Matrix A is defined as:
     |   2   5   1   |
     |   1   7   0   |
@@ -51,19 +51,16 @@ public class MatrixMultiplicationSolution2 {
     |   2   8   |
     Now calculate the product of A * B with Java, have fun! :)
      */
-
     private static final int[][] matrixA = {
             {2, 5, 1},
             {1, 7, 0}
     };
-
 
     private static final int[][] matrixB = {
             {4, 3},
             {6, 2},
             {2, 8}
     };
-
 
     public static void main(String[] args) {
         int[][] simpleC = simpleMultiplication();
@@ -86,7 +83,6 @@ public class MatrixMultiplicationSolution2 {
     }
 
     private static int[][] simpleMultiplication() {
-
 
         int c1_1 = matrixA[0][0] * matrixB[0][0] +
                 matrixA[0][1] * matrixB[1][0] +
@@ -112,7 +108,6 @@ public class MatrixMultiplicationSolution2 {
 
     private static int[][] doubleLoopMultiplication() {
 
-
         int[][] result = new int[2][2];
 
         for (int i = 0; i < 2; i++) {
@@ -128,7 +123,6 @@ public class MatrixMultiplicationSolution2 {
 
     private static int[][] tripleLoopMultiplication() {
 
-
         int[][] result = new int[2][2];
 
         for (int i = 0; i < 2; i++) {
@@ -143,6 +137,4 @@ public class MatrixMultiplicationSolution2 {
 
         return result;
     }
-
-
 }

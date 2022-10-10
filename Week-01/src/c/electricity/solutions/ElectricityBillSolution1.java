@@ -42,33 +42,38 @@ class CustomerData {
     void calc() {
         units = current - previous;
         if (type.equals("D")) {
-            if (units <= 100)
+            if (units <= 100) {
                 tbill = 1 * units;
-            else if (units > 100 && units <= 200)
+            } else if (units > 100 && units <= 200) {
                 tbill = 2.50 * units;
-            else if (units > 200 && units <= 500)
+            } else if (units > 200 && units <= 500) {
                 tbill = 4 * units;
-            else
+            } else {
                 tbill = 6 * units;
+            }
         } else {
-            if (units <= 100)
+            if (units <= 100) {
                 tbill = 2 * units;
-            else if (units > 100 && units <= 200)
+            } else if (units > 100 && units <= 200) {
                 tbill = 4.50 * units;
-            else if (units > 200 && units <= 500)
+            } else if (units > 200 && units <= 500) {
                 tbill = 6 * units;
-            else
+            } else {
                 tbill = 7 * units;
+            }
         }
     }
 
     void display() {
         System.out.println("\n\t Consumer number = " + bn);
         System.out.println("\n\t Consumer name = " + cname);
-        if (type.equals("D"))
+
+        if (type.equals("D")) {
             System.out.println("\n\t type of connection  = DOMESTIC ");
-        else
+        } else {
             System.out.println("\n\t type of connection  = COMMERCIAL ");
+        }
+
         System.out.println("\n\t Current Month  Reading = " + current);
         System.out.println("\n\t Previous Month  Reading = " + previous);
         System.out.println("\n\t Total units = " + units);
