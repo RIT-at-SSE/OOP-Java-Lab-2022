@@ -4,10 +4,7 @@ import java.util.Scanner;
 
 public class Dollar implements ICurrency {
 
-    double inr;
-    double usd;
-    double euro;
-    double yen;
+    private double usd;
 
     Scanner in = new Scanner(System.in);
 
@@ -15,8 +12,8 @@ public class Dollar implements ICurrency {
     public void toRupee() {
         System.out.println("Enter dollars to convert into Rupees:");
         usd = in.nextInt();
-        inr = usd * 67;
-        System.out.println("Dollar =" + usd + "equal to INR=" + inr);
+        double inr = usd * 67;
+        System.out.println("Dollar =" + usd + " equal to INR=" + inr);
     }
 
     @Override
@@ -26,11 +23,17 @@ public class Dollar implements ICurrency {
 
     @Override
     public void toEuro() {
-
+        System.out.println("Enter dollars to convert into Euro:");
+        usd = in.nextInt();
+        double euro = usd * 0.95;
+        System.out.println("Dollar =" + usd + " equal to EUR=" + euro);
     }
 
     @Override
     public void toYen() {
-
+        System.out.println("Enter dollars to convert into Yen:");
+        usd = in.nextInt();
+        double yen = usd * 136;
+        System.out.println("Dollar =" + usd + " equal to YEN=" + yen);
     }
 }
