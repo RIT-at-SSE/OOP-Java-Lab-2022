@@ -4,6 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
 
+        // Try creating a new Animal - error: Animal is abstract -> therefore it is not possible
+        // Animal animal = new Animal();
+
         // A new instance of Dog
         Dog bello = new Dog(10, 2, "Bello", "Johannes", "Sit, Give Paw");
 

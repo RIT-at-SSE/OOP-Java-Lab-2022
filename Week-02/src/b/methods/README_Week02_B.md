@@ -72,6 +72,7 @@ public static void main(String[] args) {
 
 Here are some links to learn more about these topics:
 
+- Java Casting : https://www.w3schools.com/java/java_type_casting.asp
 - YouTube Video on Overloading vs Overriding: https://www.youtube.com/watch?v=ryDeTfmSY_o&ab_channel=Smartherd
 - Java Overriding: https://www.javatpoint.com/method-overriding-in-java
 - Java Overloading: https://www.w3schools.com/java/java_methods_overloading.asp

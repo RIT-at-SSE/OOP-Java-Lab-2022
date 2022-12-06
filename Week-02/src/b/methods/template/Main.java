@@ -33,7 +33,6 @@ public class Main {
         // New things:
 
         // Dynamic binding:
-        // (now Animal is not abstract anymore)
 
         Animal max = new Dog(9, 2, "Max", "CSE Department", "Sit, Give Paw");
 
@@ -46,6 +45,7 @@ public class Main {
 
         // Method overriding
         max.eat();
+        ((Dog) max).eat();
         buddy.eat();
 
         // Method overloading

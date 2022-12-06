@@ -10,7 +10,7 @@ package b.methods.template;
  *
  * @author INSO - Johannes Hufnagl
  */
-class Animal {
+abstract class Animal {
 
     private int weight;
     private int age;

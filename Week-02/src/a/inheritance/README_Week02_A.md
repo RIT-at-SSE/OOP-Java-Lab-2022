@@ -4,6 +4,11 @@
 
 Write Java program on use of inheritance, preventing inheritance using final, abstract classes.
 
+## Example
+
+![Inheritance_image](../Animal.drawio.png)
+
+
 ## Java Inheritance (Subclass and Superclass)
 
 In Java, it is possible to inherit attributes and methods from one class to another. We group the "inheritance concept" into two categories:
@@ -24,6 +29,7 @@ For example, think of a superclass called ``Animal`` that has a method called ``
 
 Here are some links to learn more about these topics:
 
+- YouTube Video Inheritance in Telugu: https://www.youtube.com/watch?v=dcnoLCpg86c&ab_channel=PythonLife
 - YouTube Video on Java Inheritance: https://www.youtube.com/watch?v=Zs342ePFvRI&ab_channel=BroCode
 - YouTube Video on Java Polymorphism: https://www.youtube.com/watch?v=jhDUxynEQRI&ab_channel=CodingwithJohn
 - Java Inheritance: https://www.w3schools.com/java/java_inheritance.asp
