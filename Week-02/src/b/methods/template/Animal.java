@@ -1,4 +1,4 @@
-package a.inheritance.template;
+package b.methods.template;
 
 
 /**
@@ -10,7 +10,7 @@ package a.inheritance.template;
  *
  * @author INSO - Johannes Hufnagl
  */
-abstract class Animal {
+class Animal {
 
     private int weight;
     private int age;
@@ -21,6 +21,7 @@ abstract class Animal {
         this.age = age;
         this.name = name;
     }
+
 
     public int getWeight() {
         return weight;
@@ -44,6 +45,11 @@ abstract class Animal {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    // Method for overriding
+    public void eat() {
+        System.out.println("Animal is eating...");
     }
 
     @Override

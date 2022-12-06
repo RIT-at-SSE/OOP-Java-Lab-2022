@@ -16,7 +16,7 @@ class Converter {
     public static void main(String args[]) {
         Scanner s = new Scanner(System.in);
         int choice, ch;
-        Currency c = new Currency();
+        CurrencyNoor c = new CurrencyNoor();
 
         do {
             System.out.println("1.dollar to rupee ");

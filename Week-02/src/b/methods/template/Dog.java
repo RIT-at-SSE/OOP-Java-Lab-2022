@@ -1,4 +1,4 @@
-package a.inheritance.template;
+package b.methods.template;
 
 /**
  * A possible solution for the inheritance program.
@@ -42,6 +42,16 @@ public class Dog extends Animal {
     // In this method our dog will learn a new trick
     public void learnNewTrick(String trick) {
         this.tricks = this.tricks + ", " + trick;
+    }
+
+    // Method for overriding
+    public void eat() {
+        System.out.println("Dog is eating...");
+    }
+
+    // Method overloading
+    public void eat(String food) {
+        System.out.println("Dog is eating " + food);
     }
 
     // The toString method defines how our dog will look like when it is printed to the console

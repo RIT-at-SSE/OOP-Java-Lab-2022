@@ -12,7 +12,7 @@ import java.util.Scanner;
  * @author CSE - Noor Mohammed & INSO - Johannes Hufnagl
  */
 
-public class Currency {
+public class CurrencyNoor {
     double inr, usd;
     double euro, yen;
     Scanner in = new Scanner(System.in);
