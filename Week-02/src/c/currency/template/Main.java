@@ -14,86 +14,79 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String args[]) {
+
         Scanner s = new Scanner(System.in);
-        int choice, ch;
-        Dollar dollar = new Dollar();
-        Euro euro = new Euro();
-        Yen yen = new Yen();
-        Rupee rupee = new Rupee();
+        int firstCurrency, secondCurrency, keepRunning, amount;
+        ICurrency converter;
 
         do {
-            System.out.println("1.Dollar to Rupee ");
-            System.out.println("2.Dollar to Euro ");
-            System.out.println("3.Dollar to Yen ");
-            System.out.println("4.Euro to Rupee ");
-            System.out.println("5.Euro to Dollar ");
-            System.out.println("6.Euro to Yen ");
-            System.out.println("7.Rupee to Dollar ");
-            System.out.println("8.Rupee to Euro ");
-            System.out.println("9.Rupee to Yen ");
-            System.out.println("10.Yen to Rupee ");
-            System.out.println("11.Yen to Dollar ");
-            System.out.println("12.Yen to Euro ");
+            System.out.println("Chose first currency");
+            System.out.println("[1] Euro");
+            System.out.println("[2] Dollar");
+            System.out.println("[3] Rupee");
+            System.out.println("[4] Yen");
 
-            System.out.println("Enter your choice");
-            choice = s.nextInt();
-            switch (choice) {
-                case 1: {
-                    dollar.toRupee();
-                    break;
+            System.out.println("Enter your choice:");
+            firstCurrency = s.nextInt();
+
+            System.out.println("Chose second currency");
+            System.out.println("[1] Euro");
+            System.out.println("[2] Dollar");
+            System.out.println("[3] Rupee");
+            System.out.println("[4] Yen");
+
+            System.out.println("Enter your choice:");
+            secondCurrency = s.nextInt();
+
+            System.out.println("Enter amount:");
+            amount = s.nextInt();
+
+            converter = null; // Rest converter
+
+            switch (firstCurrency) {
+                case 1 -> { // Euro
+                    converter = new Euro(amount);
                 }
-                case 2: {
-                    dollar.toEuro();
-                    break;
+                case 2 -> { // Dollar
+                    converter = new Dollar(amount);
                 }
-                case 3: {
-                    dollar.toYen();
-                    break;
+                case 3 -> { // Rupee
+                    // TODO: Implement Rupee conversation
                 }
-                case 4: {
-                    euro.toRupee();
-                    break;
+                case 4 -> { // Yen
+                    converter = new Yen(amount);
                 }
-                case 5: {
-                    euro.toDollar();
-                    break;
+                default -> {
+                    System.out.println("First Currency not found");
                 }
-                case 6: {
-                    euro.toYen();
-                    break;
-                }
-                case 7: {
-                    // TODO: implement methods in Rupee class
-                    // rupee.toDollar();
-                    break;
-                }
-                case 8: {
-                    // TODO: implement methods in Rupee class
-                    // rupee.toEuro();
-                    break;
-                }
-                case 9: {
-                    // TODO: implement methods in Rupee class
-                    // rupee.toYen();
-                    break;
-                }
-                case 10: {
-                    yen.toRupee();
-                    break;
-                }
-                case 11: {
-                    yen.toDollar();
-                    break;
-                }
-                case 12: {
-                    yen.toEuro();
-                    break;
-                }
-                default:
-                    break;
             }
+
+            if (converter != null) { // Check if the converter is null
+
+                switch (secondCurrency) {
+                    case 1 -> { // Euro
+                        converter.toEuro();
+                    }
+                    case 2 -> { // Dollar
+                        converter.toDollar();
+                    }
+                    case 3 -> { // Rupee
+                        System.out.println("Not yet implemented!");
+                        // TODO: call toRupee() here from the Rupee
+                    }
+                    case 4 -> { // Yen
+                        converter.toYen();
+                    }
+                    default -> {
+                        System.out.println("Second Currency not found");
+                    }
+                }
+            } else {
+                System.out.println("Converter was not set");
+            }
+
             System.out.println("Enter 0 to quit and 1 to continue ");
-            ch = s.nextInt();
-        } while (ch == 1);
+            keepRunning = s.nextInt();
+        } while (keepRunning == 1);
     }
 }

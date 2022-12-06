@@ -2,11 +2,11 @@ package c.currency.template;
 
 public interface ICurrency {
 
-    public void toRupee();
+    void toRupee();
 
-    public void toDollar();
+    void toDollar();
 
-    public void toEuro();
+    void toEuro();
 
-    public void toYen();
+    void toYen();
 }

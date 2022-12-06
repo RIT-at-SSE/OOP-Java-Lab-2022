@@ -1,39 +1,33 @@
 package c.currency.template;
 
-import java.util.Scanner;
-
 public class Dollar implements ICurrency {
 
-    private double usd;
+    private double amount;
 
-    Scanner in = new Scanner(System.in);
+    public Dollar(Integer amount) {
+        this.amount = amount;
+    }
 
     @Override
     public void toRupee() {
-        System.out.println("Enter dollars to convert into Rupees:");
-        usd = in.nextInt();
-        double inr = usd * 67;
-        System.out.println("Dollar =" + usd + " equal to INR=" + inr);
+        double inr = amount * 67;
+        System.out.println("Dollar = " + amount + " equal to INR = " + inr);
     }
 
     @Override
     public void toDollar() {
-        System.out.println("You do not need convert the same currency");
+        System.out.println("Dollar = " + amount + " equal to USD = " + amount); // no conversation needed
     }
 
     @Override
     public void toEuro() {
-        System.out.println("Enter dollars to convert into Euro:");
-        usd = in.nextInt();
-        double euro = usd * 0.95;
-        System.out.println("Dollar =" + usd + " equal to EUR=" + euro);
+        double euro = amount * 0.95;
+        System.out.println("Dollar = " + amount + " equal to EUR = " + euro);
     }
 
     @Override
     public void toYen() {
-        System.out.println("Enter dollars to convert into Yen:");
-        usd = in.nextInt();
-        double yen = usd * 136;
-        System.out.println("Dollar =" + usd + " equal to YEN=" + yen);
+        double yen = amount * 136;
+        System.out.println("Dollar = " + amount + " equal to YEN = " + yen);
     }
 }

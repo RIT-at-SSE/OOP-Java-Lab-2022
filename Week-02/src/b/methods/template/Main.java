@@ -53,7 +53,6 @@ public class Main {
         buddy.eat("meat");
     }
 
-
     public static void checkType(Animal input) {
         if (input instanceof Labrador) {
             System.out.println("I am an Animal -> Dog -> Labrador");

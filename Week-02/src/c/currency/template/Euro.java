@@ -4,36 +4,32 @@ import java.util.Scanner;
 
 public class Euro implements ICurrency {
 
-    private double euro;
+    private double amount;
 
-    Scanner in = new Scanner(System.in);
+    public Euro(Integer amount) {
+        this.amount = amount;
+    }
 
     @Override
     public void toRupee() {
-        System.out.println("Enter euro to convert into Rupees:");
-        euro = in.nextInt();
-        double inr = euro * 87;
-        System.out.println("Euro =" + euro + "equal to INR=" + inr);
+        double inr = amount * 87;
+        System.out.println("Euro = " + amount + " equal to INR = " + inr);
     }
 
     @Override
     public void toDollar() {
-        System.out.println("Enter euro to convert into Dollar:");
-        euro = in.nextInt();
-        double usd = euro * 1.05;
-        System.out.println("Euro =" + euro + "equal to USD=" + usd);
+        double usd = amount * 1.05;
+        System.out.println("Euro =" + amount + " equal to USD = " + usd);
     }
 
     @Override
     public void toEuro() {
-        System.out.println("You do not need convert the same currency");
+        System.out.println("Euro = " + amount + " equal to EUR = " + amount); // no conversation needed
     }
 
     @Override
     public void toYen() {
-        System.out.println("Enter euro to convert into Yen  :");
-        euro = in.nextInt();
-        double yen = euro * 144;
-        System.out.println("Euro =" + euro + "equal to Yen=" + yen);
+        double yen = amount * 144;
+        System.out.println("Euro = " + amount + " equal to Yen = " + yen);
     }
 }
